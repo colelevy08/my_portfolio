@@ -18,7 +18,7 @@ const HomePage = () => {
               <li><a href="https://github.com/colelevy08/EchoEcho" target="_blank" rel="noopener noreferrer">EchoEcho - Solo Project</a></li>
               <li><a href="https://github.com/vcali02/Happy_Trails" target="_blank" rel="noopener noreferrer">Happy Trails - Group Project</a></li>
               <li><a href="https://github.com/colelevy08/Closet-Organizer" target="_blank" rel="noopener noreferrer">Closet Organizer - Group Project</a></li>
-              <li><a href="https://github.com/colelevy08/phase-1-group-project" target="_blank" rel="noopener noreferrer">Phase 1 - Group Project</a></li>
+              <li><a href="https://github.com/colelevy08/phase-1-group-project" target="_blank" rel="noopener noreferrer">Phase 1 - 8Group Project</a></li>
             </ul>
           </li>
           <li>
