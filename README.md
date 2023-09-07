@@ -26,6 +26,9 @@ This is the repository for Cole Levy's portfolio website. The website is built u
 
 ### Prerequisites
 - Node.js
+- python
+- flask
+- sqlalchemy
 - npm or yarn
 
 ### Steps
