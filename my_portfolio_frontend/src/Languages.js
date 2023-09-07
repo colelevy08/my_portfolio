@@ -4,10 +4,10 @@ import React from 'react';
 
 function Languages({ data }) {
   return (
-    <div style={{ margin: '1rem 0' }}>
-      <h2>Spoken Languages</h2>
-      <ul>
-        {data && data.map((language, index) => <li key={index}>{language}</li>)}
+    <div className="m-4">
+      <h2 className="text-xl font-bold">Spoken Languages</h2>
+      <ul className="list-disc pl-5">
+        {data && data.map((language, index) => <li key={index} className="text-base">{language}</li>)}
       </ul>
     </div>
   );

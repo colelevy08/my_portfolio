@@ -4,10 +4,10 @@ import React from 'react';
 
 function Timeline({ data }) {
   return (
-    <div  style={{ margin: '1rem 0' }}>
-      <h2>Timeline</h2>
-      <ul>
-        {data && data.map((event, index) => <li key={index}>{`${event.event} at ${event.place}, ${event.time}`}</li>)}
+    <div className="m-4">
+      <h2 className="text-xl font-bold">Timeline</h2>
+      <ul className="list-disc pl-5">
+        {data && data.map((event, index) => <li key={index} className="text-base">{`${event.event} at ${event.place}, ${event.time}`}</li>)}
       </ul>
     </div>
   );

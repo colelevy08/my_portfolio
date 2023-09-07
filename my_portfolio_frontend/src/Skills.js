@@ -1,17 +1,19 @@
+// Skills.js
+
 import React from 'react';
 
 const Skills = ({ data }) => {
   return (
-    <div style={{ margin: '1rem 0' }}>
-      <h2>Skills</h2>
+    <div className="m-4">
+      <h2 className="text-xl font-bold">Skills</h2>
       {data ? (
-        <ul>
+        <ul className="list-disc pl-5">
           {data.map((skill, index) => (
-            <li key={index}>{skill}</li>
+            <li key={index} className="text-base">{skill}</li>
           ))}
         </ul>
       ) : (
-        <p>Loading...</p>
+        <p className="text-base">Loading...</p>
       )}
     </div>
   );

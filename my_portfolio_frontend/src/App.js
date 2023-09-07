@@ -10,7 +10,7 @@ import Timeline from './Timeline';
 import Education from './Education';
 import WorkHistory from './WorkHistory';
 import HomePage from './HomePage';
-import './App.css';
+import './index.css'; // Importing Tailwind CSS
 
 function App() {
   const [info, setInfo] = useState({});
@@ -28,21 +28,21 @@ function App() {
 
   return (
     <Router>
-      <div className="App">
-        <header className="App-header">
-          <h1>Welcome to my portfolio - Cole Levy</h1>
-          <nav>
-            <Link to="/">Home</Link> |
-            <Link to="/skills">Skills</Link>
-            <Link to="/software">Software</Link>
-            <Link to="/languages">Languages</Link>
-            <Link to="/accomplishments">Accomplishments</Link>
-            <Link to="/timeline">Timeline</Link>
-            <Link to="/education">Education</Link>
-            <Link to="/work_history">Work History</Link>
+      <div className="App bg-gray-100">
+        <header className="bg-blue-500 text-white p-4">
+          <h1 className="text-2xl">Welcome to my portfolio - Cole Levy</h1>
+          <nav className="space-x-4">
+            <Link className="text-white" to="/">Home</Link> |
+            <Link className="text-white" to="/skills">Skills</Link>
+            <Link className="text-white" to="/software">Software</Link>
+            <Link className="text-white" to="/languages">Languages</Link>
+            <Link className="text-white" to="/accomplishments">Accomplishments</Link>
+            <Link className="text-white" to="/timeline">Timeline</Link>
+            <Link className="text-white" to="/education">Education</Link>
+            <Link className="text-white" to="/work_history">Work History</Link>
           </nav>
         </header>
-        <main>
+        <main className="p-4">
           <Routes>
             <Route path="/skills" element={<Skills data={info.skills} />} />
             <Route path="/software" element={<Software data={info.software} />} />

@@ -4,10 +4,10 @@ import React from 'react';
 
 function Accomplishments({ data }) {
   return (
-    <div  style={{ margin: '1rem 0' }}>
-      <h2>Accomplishments</h2>
-      <ul>
-        {data && data.map((accomplishment, index) => <li key={index}>{accomplishment}</li>)}
+    <div className="m-4">
+      <h2 className="text-xl font-bold">Accomplishments</h2>
+      <ul className="list-disc pl-5">
+        {data && data.map((accomplishment, index) => <li key={index} className="text-base">{accomplishment}</li>)}
       </ul>
     </div>
   );
