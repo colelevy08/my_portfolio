@@ -1,6 +1,8 @@
 // Timeline.js
 
 import React from 'react';
+import './index.css'; // Importing Tailwind CSS
+
 
 function Timeline({ data }) {
   return (

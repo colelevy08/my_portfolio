@@ -1,6 +1,8 @@
 // WorkHistory.js
 
 import React from 'react';
+import './index.css'; // Importing Tailwind CSS
+
 
 function WorkHistory({ data }) {
   return (

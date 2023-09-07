@@ -1,6 +1,8 @@
 // HomePage.js
 
 import React from 'react';
+import './index.css'; // Importing Tailwind CSS
+
 
 const HomePage = () => {
   return (

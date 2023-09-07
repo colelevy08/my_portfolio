@@ -1,6 +1,8 @@
 // Skills.js
 
 import React from 'react';
+import './index.css'; // Importing Tailwind CSS
+
 
 const Skills = ({ data }) => {
   return (

@@ -1,6 +1,7 @@
 // Software.js
 
 import React from 'react';
+import './index.css'; // Importing Tailwind CSS
 
 function Software({ data }) {
   return (

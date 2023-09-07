@@ -1,6 +1,8 @@
 // Accomplishments.js
 
 import React from 'react';
+import './index.css'; // Importing Tailwind CSS
+
 
 function Accomplishments({ data }) {
   return (
