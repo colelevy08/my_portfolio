@@ -34,7 +34,8 @@ This is the repository for Cole Levy's portfolio website. The website is built u
 ### Steps
 1. Clone the repository - git clone https://github.com/colelevy08/my_portfolio.git
 2. Navigate to the project directory - cd my_portfolio
-3. Install dependencies - npm install (or yarn start)
+3. Install dependencies - npm install 
+4. Start the development server - cd into venv, python app.py
 
 ## Contact
 - Email: [colelevy08@gmail.com](mailto:colelevy08@gmail.com)
