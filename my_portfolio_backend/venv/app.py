@@ -16,7 +16,8 @@ class User(db.Model):
 
 @app.route('/')
 def home():
-    return jsonify({"message": "Welcome to my portfolio ~ Cole Levy"})
+    # Added a welcome image
+    return jsonify({"message": "Welcome to my portfolio ~ Cole Levy", "image": "https://example.com/welcome-image.jpg"})
 
 @app.route('/info')
 def info():
