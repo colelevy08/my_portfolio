@@ -1,6 +1,6 @@
 # Cole Levy's Portfolio Website
 
-![Portfolio Banner](https://github.com/colelevy08/my_portfolio/blob/Images/banner-industry-tech.jpg) 
+![Portfolio Banner](https://github.com/colelevy08/my_portfolio/blob/Banner/banner-industry-tech.jpg) 
 
 ## Table of Contents
 - [Overview](#overview)
