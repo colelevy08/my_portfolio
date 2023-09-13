@@ -1,15 +1,18 @@
-// Education.js
-
 import React from 'react';
-import './index.css'; // Importing Tailwind CSS
-
 
 function Education({ data }) {
   return (
-    <div className="m-4">
-      <h2 className="text-xl font-bold">Education</h2>
-      <ul className="list-disc pl-5">
-        {data && data.map((edu, index) => <li key={index} className="text-base">{`${edu.degree} at ${edu.school}, ${edu.time}`}</li>)}
+    <div className="bg-white p-8 rounded-lg shadow-md">
+      <h2 className="text-2xl font-bold mb-4">Education</h2>
+      <ul className="space-y-4">
+        {data.map((education, index) => (
+          <li key={index} className="border p-4 rounded-md">
+            <strong className="text-lg font-semibold block">School: {education.school}</strong>
+            <span className="text-blue-600 block">Studies: {education.studies} </span> 
+            <span className="text-blue-600">Time:</span> {education.time} < br/>
+            <span className="text-blue-600">Description:</span> {education.description}
+          </li>
+        ))}
       </ul>
     </div>
   );

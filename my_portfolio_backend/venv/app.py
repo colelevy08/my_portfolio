@@ -1,8 +1,6 @@
-# app.py
 from flask import Flask, jsonify
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
-
 
 app = Flask(__name__)
 CORS(app)
@@ -19,10 +17,6 @@ class User(db.Model):
 @app.route('/')
 def home():
     return jsonify({"message": "Welcome to my portfolio ~ Cole Levy"})
-
-from flask import Flask, jsonify
-
-app = Flask(__name__)
 
 @app.route('/info')
 def info():
@@ -64,16 +58,16 @@ def info():
             {"event": "15 Week Program in Software Engineering: Full Stack Development", "place": "Flatiron School", "time": "2023.02 - 2023.07"}
         ],
         "education": [
-            {"degree": "15 Week Program - Software Engineering: Full Stack Development", "school": "Flatiron School", "time": "2023.02 - 2023.07"},
-            {"degree": "Bachelor of Arts - Communication", "school": "SUNY Geneseo", "time": "2019.09 - 2022.12"},
-            {"Study Abroad": "French Language, History, And Culture", "school": "LA Sorbonne Paris, France", "time": "2022.09 - 2022.12", "description": "Study abroad program in Paris, France. Classes in French language, history, and culture."},
-            {"Study Abroad": "International Relations", "school": "Sciences Po Saint Germain En Laye, France", "time": "2022.09 - 2022.12", "description": "Study abroad program in Saint Germain En Laye, France. Classes in International Relations."},
-            {"Associate of Science": "Entrepreneurship And Sustainable Technologies", "school": "Hudson Valley Community College: P-Tech Hudson Valley, NY", "time": "2015.09 - 2019.06", "description": "Attended an early college High School program through HVCC and received college credits. Studied sustainable technologies, renewable energy, and entrepreneurship."},
-            {"Regents Diploma": "New York Regent Standard", "school": "Saratoga Springs High School, NY", "time": "2015.09 - 2019.06", "description": "Attended Saratoga Springs High School. Received a New York Regents Diploma."}
+            {"studies": "15 Week Program - Software Engineering: Full Stack Development", "school": "Flatiron School", "time": "2023.02 - 2023.07", "description": "15 Week Software Engineering program where I have become proficient in HTML, CSS, JavaScript, React, Python, Flask, SQL, and more."},
+            {"studies": "Bachelor of Arts - Communication", "school": "SUNY Geneseo", "time": "2019.09 - 2022.12", "description": "Received a Bachelors Degree in Communication: Journalism and Media, Personal and Professional. Completed degree one semester early. Also studied Chinese and French in depth, as well as International Relations."},
+            {"studies": "French Language, History, And Culture", "school": "LA Sorbonne Paris, France", "time": "2022.09 - 2022.12", "description": "Study abroad program in Paris, France. Classes in French language, history, and culture."},
+            {"studies": "International Relations", "school": "Sciences Po Saint Germain En Laye, France", "time": "2022.09 - 2022.12", "description": "Study abroad program in Saint Germain En Laye, France. Classes in International Relations."},
+            {"studies": "Entrepreneurship And Sustainable Technologies", "school": "Hudson Valley Community College: P-Tech Hudson Valley, NY", "time": "2015.09 - 2019.06", "description": "Attended an early college High School program through HVCC and received college credits. Studied sustainable technologies, renewable energy, and entrepreneurship."},
+            {"studies": "New York Regent Standard", "school": "Saratoga Springs High School, NY", "time": "2015.09 - 2019.06", "description": "Attended Saratoga Springs High School. Received a New York Regents Diploma."}
         ],
         "work_history": [
-            {"role": "Server", "company": "The Daily Catch", "time": "2022.06 - 2022.07"},
-            {"role": "Server", "company": "Maggiano's", "time": "2022.04 - 2022.07"},
+            {"role": "Server", "company": "The Daily Catch", "time": "2022.06 - 2022.07", "description": "Worked with POS system to place orders, manage bills, and handle complimentary items. Served food and beverages promptly with focused attention to customer needs."},
+            {"role": "Server", "company": "Maggiano's", "time": "2022.04 - 2022.07", "description": "Greeted guests, took orders, and maintained high quality of service for duration of guests meal. Worked with POS system to place orders, manage bills, and handle complimentary items."},
             {"role": "Food Runner/Seafood Prep", "company": "The Atlantic Seafood and Chophouse", "time": "2021.04 - 2021.07", "description": "Delivered food from kitchen to table while working closely with head chef and owner (who act as expeditors during service hours) in order to maintain flow of kitchen. Maintained speed of service for food orders while minimizing errors and complaints."},
             {"role": "Bellhop and Night Auditor", "company": "The Harborside Inn", "time": "2021.04 - 2021.07", "description": "Greet guests and assist them with luggage. Worked closely with managers to assist with any tasks in need of completion. Completed night audit for guest ledgers to close bank and cash registers, reconciling issues quickly, and marking discrepancies. Oversaw night auditing of daily room occupancy and hotel revenue."},
             {"role": "Teacher's Assistant Jasmine Tang's Chinese Language Class", "company": "SUNY Geneseo", "time": "2021.01 - 2021.05", "description": "Oversaw students in virtual classroom during COVID lockdowns to monitor, enforce rules, and support lead teacher. Collaborated with teachers for lesson preparation by preparing materials and setting up equipment. Worked with lead teacher to monitor class schedule and take attendance. Worked with teacher to optimize learning plans based on student test grades and evaluations. Partnered with teacher to plan and implement lessons following school's curriculum, goals, and objectives. Reviewed lesson material with students individually or in small groups. Helped teachers recognize learning issues evidenced in one-to-one support instruction."},
@@ -89,5 +83,3 @@ if __name__ == '__main__':
     app.run(debug=True)
 
 
-if __name__ == '__main__':
-    app.run(debug=True)

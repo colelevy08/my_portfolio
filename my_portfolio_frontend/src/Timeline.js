@@ -1,15 +1,17 @@
-// Timeline.js
-
 import React from 'react';
-import './index.css'; // Importing Tailwind CSS
-
 
 function Timeline({ data }) {
   return (
-    <div className="m-4">
-      <h2 className="text-xl font-bold">Timeline</h2>
-      <ul className="list-disc pl-5">
-        {data && data.map((event, index) => <li key={index} className="text-base">{`${event.event} at ${event.place}, ${event.time}`}</li>)}
+    <div className="bg-white p-8 rounded-lg shadow-md">
+      <h2 className="text-2xl font-bold mb-4">Timeline</h2>
+      <ul className="space-y-4">
+        {data.map((event, index) => (
+          <li key={index} className="border p-4 rounded-md">
+            <strong className="text-lg font-semibold">{event.event}</strong> - {event.time} <br />
+            <span className="text-blue-600">Location:</span> {event.place} <br />
+            <span className="text-blue-600">Description:</span> {event.description}
+          </li>
+        ))}
       </ul>
     </div>
   );
