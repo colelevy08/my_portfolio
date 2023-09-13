@@ -1,15 +1,27 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGraduationCap, faBook, faBriefcase } from '@fortawesome/free-solid-svg-icons';
+
 
 function Education({ data }) {
   return (
     <div className="bg-white p-8 rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-4">Education</h2>
+      <h2 className="text-2xl font-bold mb-4 flex items-center">
+        <FontAwesomeIcon icon={faGraduationCap} className="mr-2" />
+        Education
+      </h2>
       <ul className="space-y-4">
         {data.map((education, index) => (
           <li key={index} className="border p-4 rounded-md">
-            <strong className="text-lg font-semibold block">School: {education.school}</strong>
-            <span className="text-blue-600 block">Studies: {education.studies} </span> 
-            <span className="text-blue-600">Time:</span> {education.time} < br/>
+            <strong className="text-lg font-semibold block flex items-center">
+              <FontAwesomeIcon icon={faBook} className="mr-2" />
+              School: {education.school}
+            </strong>
+            <span className="text-blue-600 block flex items-center">
+              <FontAwesomeIcon icon={faBriefcase} className="mr-2" />
+              Studies: {education.studies}
+            </span>
+            <span className="text-blue-600">Time:</span> {education.time} <br />
             <span className="text-blue-600">Description:</span> {education.description}
           </li>
         ))}

@@ -29,7 +29,7 @@ function App() {
     <Router>
       <div className="App bg-gray-100">
         <header className="bg-blue-500 text-white p-4">
-          <h1 className="text-2xl">Cole Levy's Portfolio</h1>
+        <i className="fas fa-user-circle"></i> Cole Levy's Portfolio
           <nav className="space-x-4">
             <Link className="text-white" to="/">Home</Link> |
             <Link className="text-white" to="/education">Education</Link> |
