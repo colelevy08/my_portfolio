@@ -1,15 +1,13 @@
-// Accomplishments.js
-
 import React from 'react';
-import './index.css'; // Importing Tailwind CSS
-
 
 function Accomplishments({ data }) {
   return (
-    <div className="m-4">
-      <h2 className="text-xl font-bold">Accomplishments</h2>
-      <ul className="list-disc pl-5">
-        {data && data.map((accomplishment, index) => <li key={index} className="text-base">{accomplishment}</li>)}
+    <div className="bg-white p-4 rounded-md">
+      <h2 className="text-xl font-semibold">Accomplishments</h2>
+      <ul>
+        {data.map((accomplishment, index) => (
+          <li key={index}>{accomplishment}</li>
+        ))}
       </ul>
     </div>
   );

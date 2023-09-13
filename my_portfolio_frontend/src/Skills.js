@@ -1,24 +1,16 @@
-// Skills.js
-
 import React from 'react';
-import './index.css'; // Importing Tailwind CSS
 
-const Skills = ({ data }) => {
+function Skills({ data }) {
   return (
-    <div className="m-4">
-      <h2 className="text-xl font-bold">Skills</h2>
-      {data ? (
-        <ul className="list-disc pl-5">
-          {data.map((skill, index) => (
-            <li key={index} className="text-base">{skill}</li>
-          ))}
-        </ul>
-      ) : (
-        <p className="text-base">Loading...</p>
-      )}
+    <div className="bg-white p-4 rounded-md">
+      <h2 className="text-xl font-semibold">Skills</h2>
+      <ul>
+        {data.map((skill, index) => (
+          <li key={index}>{skill}</li>
+        ))}
+      </ul>
     </div>
   );
-};
+}
 
 export default Skills;
-

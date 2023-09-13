@@ -1,15 +1,13 @@
-// Languages.js
-
 import React from 'react';
-import './index.css'; // Importing Tailwind CSS
-
 
 function Languages({ data }) {
   return (
-    <div className="m-4">
-      <h2 className="text-xl font-bold">Spoken Languages</h2>
-      <ul className="list-disc pl-5">
-        {data && data.map((language, index) => <li key={index} className="text-base">{language}</li>)}
+    <div className="bg-white p-4 rounded-md">
+      <h2 className="text-xl font-semibold">Spoken Languages</h2>
+      <ul>
+        {data.map((language, index) => (
+          <li key={index}>{language}</li>
+        ))}
       </ul>
     </div>
   );
