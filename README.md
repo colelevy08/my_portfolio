@@ -1,6 +1,6 @@
 # Cole Levy's Portfolio Website
 
-![Portfolio Banner](./path/to/banner/image.jpg) <!-- Replace with the path to your banner image -->
+![Portfolio Banner](https://www.google.com/imgres?imgurl=https%3A%2F%2Fblusa.valley.com%2Fwp-content%2Fuploads%2F2015%2F10%2Fbanner-industry-tech.jpg&tbnid=oFKubjH4oTKf9M&vet=12ahUKEwjCu7LvuKiBAxVANd4AHYvFAhIQMygIegUIARCIAQ..i&imgrefurl=https%3A%2F%2Fblusa.valley.com%2Fcommercial-banking%2Findustry-focus%2Fcommercial-industrial%2Fattachment%2Fbanner-industry-tech&docid=3yV-i767tbyrqM&w=1828&h=616&q=Tech%20banner&ved=2ahUKEwjCu7LvuKiBAxVANd4AHYvFAhIQMygIegUIARCIAQ.jpg) 
 
 ## Table of Contents
 - [Overview](#overview)
@@ -13,25 +13,28 @@
 - [Contact](#contact)
 
 ## Overview
-Welcome to the repository for Cole Levy's portfolio website! This website serves as a comprehensive platform to showcase my skills, work history, education, and other accomplishments. Built using a diverse set of technologies, it aims to demonstrate my proficiency in Full Stack Development.
+Welcome to the repository for Cole Levy's portfolio website. This website serves as a comprehensive showcase of Cole's skills, work history, education, and other accomplishments. It's built using a diverse set of technologies to demonstrate proficiency in Full Stack Development.
 
-## Technologies Used
-- **Frontend**: React, JavaScript, Tailwind CSS
-- **Backend**: Python, Flask, SQLAlchemy
-- **DevOps**: Node.js
-- **Database**: SQLAlchemy
+## 🛠 Technologies Used
+- React.js: Frontend framework
+- JavaScript: Programming language
+- Tailwind CSS: Styling framework
+- Python: Backend language
+- Flask: Backend framework
+- SQLAlchemy: Database ORM
+- Node.js: JavaScript runtime
 
-## Features
-- **Home Page**: Introduction and a quick way to get in touch.
-- **Skills**: Showcases my technical skills in various domains.
-- **Software**: Lists software I'm proficient in.
-- **Languages**: Languages I can speak.
-- **Accomplishments**: A rundown of my achievements and awards.
-- **Timeline**: A visual representation of my career and educational journey.
-- **Education**: My educational background.
-- **Work History**: A detailed look at my past work experiences.
+## 🌟 Features
+- **🏠 Home Page**: Introduction and contact information
+- **💻 Skills**: A detailed list of technical skills
+- **🛠 Software**: Proficiency in various software tools
+- **🗨 Languages**: Languages spoken
+- **🏆 Accomplishments**: Notable achievements and awards
+- **🕒 Timeline**: A visually appealing career and education timeline
+- **🎓 Education**: In-depth educational background
+- **👔 Work History**: Comprehensive past work experience
 
-## Installation and Setup
+## 🚀 Installation and Setup
 
 ### Prerequisites
 - Node.js
@@ -40,21 +43,19 @@ Welcome to the repository for Cole Levy's portfolio website! This website serves
 - SQLAlchemy
 - npm or yarn
 
-### Steps
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/colelevy08/my_portfolio.git
+### 📦 Steps
+1. Clone the repository: `git clone https://github.com/colelevy08/my_portfolio.git`
+2. Navigate to the project directory: `cd my_portfolio`
+3. Install frontend dependencies: `npm install`
+4. Activate the virtual environment: `source venv/bin/activate` (Linux/Mac) or `venv\\Scripts\\activate` (Windows)
+5. Start the Flask development server: `python app.py`
 
-1. Clone the repository - git clone https://github.com/colelevy08/my_portfolio.git
-2. Navigate to the project directory - cd my_portfolio
-3. Install dependencies - npm install 
-4. Start the development server - cd into venv, python app.py
 
 ### Usage
 After setting up the project, you can access the website at `http://localhost:PORT`. Replace `PORT` with the port number your server is running on.
 
-## Contact
+## 📞 Contact
 - 📧 Email: [colelevy08@gmail.com](mailto:colelevy08@gmail.com)
 - 🌐 GitHub: [colelevy08](https://github.com/colelevy08)
-- 🌐 LinkedIn: [Cole Levy](https://www.linkedin.com/in/colelevy)
+- 📱 LinkedIn: [Cole Levy](https://www.linkedin.com/in/colelevy)
 
