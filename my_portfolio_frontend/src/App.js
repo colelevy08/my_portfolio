@@ -33,13 +33,13 @@ function App() {
           <h1 className="text-2xl">Welcome to my portfolio - Cole Levy</h1>
           <nav className="space-x-4">
             <Link className="text-white" to="/">Home</Link> |
-            <Link className="text-white" to="/skills">Skills</Link>
-            <Link className="text-white" to="/software">Software</Link>
-            <Link className="text-white" to="/languages">Languages</Link>
-            <Link className="text-white" to="/accomplishments">Accomplishments</Link>
-            <Link className="text-white" to="/timeline">Timeline</Link>
             <Link className="text-white" to="/education">Education</Link>
             <Link className="text-white" to="/work_history">Work History</Link>
+            <Link className="text-white" to="/timeline">Timeline</Link>
+            <Link className="text-white" to="/software">Software</Link>
+            <Link className="text-white" to="/languages">Spoken Languages</Link>
+            <Link className="text-white" to="/skills">Skills</Link>
+            <Link className="text-white" to="/accomplishments">Accomplishments</Link>
           </nav>
         </header>
         <main className="p-4">
