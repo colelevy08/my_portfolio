@@ -50,13 +50,11 @@ Welcome to the repository for Cole Levy's portfolio website! This website serves
 3. Install dependencies - npm install 
 4. Start the development server - cd into venv, python app.py
 
-## Usage
+### Usage
 After setting up the project, you can access the website at `http://localhost:PORT`. Replace `PORT` with the port number your server is running on.
 
 ## Contact
 - 📧 Email: [colelevy08@gmail.com](mailto:colelevy08@gmail.com)
 - 🌐 GitHub: [colelevy08](https://github.com/colelevy08)
 - 🌐 LinkedIn: [Cole Levy](https://www.linkedin.com/in/colelevy)
-
-test
 
