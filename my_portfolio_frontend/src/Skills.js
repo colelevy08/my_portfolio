@@ -3,7 +3,6 @@
 import React from 'react';
 import './index.css'; // Importing Tailwind CSS
 
-
 const Skills = ({ data }) => {
   return (
     <div className="m-4">
@@ -22,3 +21,4 @@ const Skills = ({ data }) => {
 };
 
 export default Skills;
+
