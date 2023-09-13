@@ -1,31 +1,38 @@
 import React from 'react';
 
+// Timeline component to display a list of events
 function Timeline({ data }) {
   return (
-    <div className="bg-white p-8 rounded-lg shadow-md">
+    <div className="bg-white p-8 rounded-lg shadow-lg">
       <h2 className="text-2xl font-bold mb-4 flex items-center">
         <i className="fas fa-clock mr-2"></i> Timeline
       </h2>
-      <ul className="space-y-4">
-        {data.map((event, index) => (
-          <li key={index} className="border p-4 rounded-md relative">
-            <div className="absolute left-0 top-0 h-full w-0.5 bg-blue-600" style={{ left: '50%' }}></div>
-            <div className="absolute left-0 top-1/2 bg-blue-600 rounded-full" style={{ left: '50%', transform: 'translate(-50%, -50%)', width: '20px', height: '20px' }}></div>
-            <strong className="text-lg font-semibold flex items-center">
-              <i className="fas fa-flag mr-2"></i>
-              {event.event}
-            </strong> - {event.time} <br />
-            <span className="text-blue-600 flex items-center">
-              <i className="fas fa-map-marker-alt mr-2"></i>
-              Location:
-            </span> {event.place} <br />
-            <span className="text-blue-600 flex items-center">
-              <i className="fas fa-info-circle mr-2"></i>
-              Description:
-            </span> {event.description}
-          </li>
-        ))}
-      </ul>
+      <div className="relative">
+        {/* Vertical line connecting the boxes */}
+        <div className="absolute left-1/2 h-full w-0.5 bg-blue-600"></div>
+        <ul className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {data.map((event, index) => (
+            <li key={index} className="relative">
+              {/* Event box */}
+              <div className="p-4 border border-gray-300 rounded-lg bg-white max-w-md mx-auto">
+                <strong className="text-md font-semibold flex items-center">
+                  <i className="fas fa-flag mr-1"></i>
+                  {event.event}
+                </strong>
+                <span className="ml-1 text-gray-600 text-sm">{event.time}</span>
+                <div className="mt-1 text-blue-600 flex items-center text-sm">
+                  <i className="fas fa-map-marker-alt mr-1"></i>
+                  Location: {event.place}
+                </div>
+                <div className="mt-1 text-blue-600 flex items-center text-sm">
+                  <i className="fas fa-info-circle mr-1"></i>
+                  Description: {event.description}
+                </div>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

@@ -16,12 +16,11 @@ function Education({ data }) {
             <strong className="text-lg font-semibold block flex items-center">
               <FontAwesomeIcon icon={faBook} className="mr-2" />
               School: {education.school}
-            </strong>
-            <span className="text-blue-600 block flex items-center">
+              </strong>
+            <span className="text-blue-600">
               <FontAwesomeIcon icon={faBriefcase} className="mr-2" />
-              Studies: {education.studies}
-            </span>
-            <span className="text-blue-600">Time:</span> {education.time} <br />
+              Studies: </span> {education.studies} < br/>
+            <span className="text-blue-600">Date:</span> {education.time} <br />
             <span className="text-blue-600">Description:</span> {education.description}
           </li>
         ))}
