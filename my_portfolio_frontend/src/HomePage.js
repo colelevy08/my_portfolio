@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope, faCode, faGlobe, faBookmark, faStar } from '@fortawesome/free-solid-svg-icons';
 import { faComment } from '@fortawesome/free-regular-svg-icons'; // Importing regular comment icon
 
+
 // HomePage component definition
 const HomePage = () => {
   return (

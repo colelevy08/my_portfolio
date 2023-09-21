@@ -8,7 +8,7 @@ import Timeline from './Timeline';
 import Education from './Education';
 import WorkHistory from './WorkHistory';
 import HomePage from './HomePage';
-import { personalInfo } from './Data';  // Import the data
+import { personalInfo } from './Data'; // Import data from Data.js
 import './index.css'; // Importing Tailwind CSS
 
 function App() {
@@ -18,8 +18,8 @@ function App() {
   useEffect(() => {
     fetch('http://localhost:5000/info')
       .then(response => response.json())
-      .then(data => {
-        setInfo(data);
+      .then(personalInfo => {
+        setInfo(personalInfo);
       })
       .catch(error => {
         console.log('Error fetching data:', error);

@@ -1,8 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGraduationCap, faUniversity, faChalkboardTeacher, faCalendarAlt, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+import { personalInfo } from './Data'; // Import data from Data.js
 
-function Education({ data }) {
+const { education } = personalInfo; // Destructure timeline data
+
+
+function Education() {
   return (
     <div className="bg-white p-8 rounded-lg shadow-md">
       <h2 className="text-2xl font-bold mb-4 flex items-center">
@@ -10,7 +14,7 @@ function Education({ data }) {
         Education
       </h2>
       <ul className="space-y-4">
-        {data.map((education, index) => (
+        {education.map((education, index) => (
           <li key={index} className="border p-4 rounded-md">
             <strong className="text-lg font-semibold block flex items-center">
               <FontAwesomeIcon icon={faUniversity} className="mr-2" />

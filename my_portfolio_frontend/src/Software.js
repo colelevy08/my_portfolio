@@ -1,4 +1,8 @@
 import React from 'react';
+import { personalInfo } from './Data'; // Import data from Data.js
+
+const { software} = personalInfo; // Destructure timeline data
+
 
 // Mapping software names to their respective icons
 const softwareIcons = {
@@ -18,14 +22,14 @@ const softwareIcons = {
   'Microsoft Office': 'fab fa-windows'
 };
 
-function Software({ data }) {
+function Software() {
   return (
     <div className="bg-white p-4 rounded-md">
       <h2 className="text-xl font-semibold flex items-center">
         <i className="fas fa-laptop-code mr-2"></i> Software
       </h2>
       <ul>
-        {data.map((software, index) => (
+        {software.map((software, index) => (
           <li key={index} className="flex items-center">
             <i className={`${softwareIcons[software] || 'fas fa-code'} text-blue-500 mr-2`}></i>
             {software}

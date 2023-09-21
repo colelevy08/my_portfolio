@@ -176,7 +176,7 @@ const personalInfo = {
             }    
         ]
         }
-        export default personalInfo;
+    export default personalInfo;
 
     
 

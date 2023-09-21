@@ -1,8 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase, faUserTie, faCalendarAlt, faInfoCircle, faBuilding } from '@fortawesome/free-solid-svg-icons';
+import { personalInfo } from './Data'; // Import data from Data.js
 
-function WorkHistory({ data }) {
+const { work_history } = personalInfo; // Destructure timeline data
+
+
+function WorkHistory() {
   return (
     <div className="bg-white p-8 rounded-lg shadow-md">
       <h2 className="text-2xl font-bold mb-4 flex items-center">
@@ -10,7 +14,7 @@ function WorkHistory({ data }) {
         Work History
       </h2>
       <ul className="space-y-4">
-        {data.map((work, index) => (
+        {work_history.map((work, index) => (
           <li key={index} className="border p-4 rounded-md">
             <strong className="text-lg font-semibold">
               <FontAwesomeIcon icon={faUserTie} className="mr-2" />
