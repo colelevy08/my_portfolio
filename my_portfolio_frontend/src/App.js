@@ -8,6 +8,7 @@ import Timeline from './Timeline';
 import Education from './Education';
 import WorkHistory from './WorkHistory';
 import HomePage from './HomePage';
+import { personalInfo } from './Data';  // Import the data
 import './index.css'; // Importing Tailwind CSS
 
 function App() {
