@@ -1,7 +1,7 @@
 import React from 'react';
-import { personalInfo } from './Data'; // Import data from Data.js
+import personalInfo from './Data'; // Import data from Data.js
 
-const { spoken_languages } = personalInfo; // Destructure timeline data
+const { spoken_languages } = personalInfo.spoken_languages; // Destructure timeline data
 
 
 // Mapping language names to their respective icons

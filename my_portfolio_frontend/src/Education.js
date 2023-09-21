@@ -1,9 +1,9 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGraduationCap, faUniversity, faChalkboardTeacher, faCalendarAlt, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
-import { personalInfo } from './Data'; // Import data from Data.js
+import personalInfo from './Data'; // Import data from Data.js
 
-const { education } = personalInfo; // Destructure timeline data
+const { education } = personalInfo.education; // Destructure timeline data
 
 
 function Education() {

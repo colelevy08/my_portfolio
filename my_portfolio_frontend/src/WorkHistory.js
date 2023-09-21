@@ -1,9 +1,9 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase, faUserTie, faCalendarAlt, faInfoCircle, faBuilding } from '@fortawesome/free-solid-svg-icons';
-import { personalInfo } from './Data'; // Import data from Data.js
+import personalInfo from './Data'; // Import data from Data.js
 
-const { work_history } = personalInfo; // Destructure timeline data
+const { work_history } = personalInfo.work_history; // Destructure timeline data
 
 
 function WorkHistory() {

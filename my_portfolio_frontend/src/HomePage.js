@@ -7,7 +7,7 @@ import { faComment } from '@fortawesome/free-regular-svg-icons'; // Importing re
 
 
 // HomePage component definition
-const HomePage = () => {
+const my_portfolio = () => {
   return (
     <div className="m-4">
       {/* About Me Section */}
@@ -85,4 +85,4 @@ const HomePage = () => {
 };
 
 // Exporting the HomePage component
-export default HomePage;
+export default my_portfolio;

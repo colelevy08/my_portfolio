@@ -1,9 +1,9 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt, faInfoCircle, faBuilding, faStar } from '@fortawesome/free-solid-svg-icons';
-import { personalInfo } from './Data'; // Import data from Data.js
+import personalInfo from './Data'; // Import data from Data.js
 
-const { timeline } = personalInfo; // Destructure timeline data
+const { timeline } = personalInfo.timeline; // Destructure timeline data
 
 
 // Timeline component to display a list of events

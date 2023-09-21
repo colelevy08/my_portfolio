@@ -1,4 +1,7 @@
 import React from 'react';
+import personalInfo from './Data'; // Import data from Data.js
+
+const accomplishments = personalInfo.accomplishments; // Destructure timeline data
 
 // Mapping accomplishment names to their respective icons
 const accomplishmentIcons = {

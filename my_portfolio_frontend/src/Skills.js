@@ -1,7 +1,7 @@
 import React from 'react';
-import { personalInfo } from './Data'; // Import data from Data.js
+import personalInfo from './Data'; // Import data from Data.js
 
-const { skills } = personalInfo; // Destructure timeline data
+const { skills } = personalInfo.skills; // Destructure timeline data
 
 
 // Mapping skill names to their respective icons

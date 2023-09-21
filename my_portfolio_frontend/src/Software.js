@@ -1,7 +1,7 @@
 import React from 'react';
-import { personalInfo } from './Data'; // Import data from Data.js
+import personalInfo from './Data'; // Import data from Data.js
 
-const { software} = personalInfo; // Destructure timeline data
+const { software } = personalInfo.software; // Destructure timeline data
 
 
 // Mapping software names to their respective icons
