@@ -178,12 +178,3 @@ const personalInfo = {
         }
     export default personalInfo;
 
-    
-
-
-
-
-
-
-
-

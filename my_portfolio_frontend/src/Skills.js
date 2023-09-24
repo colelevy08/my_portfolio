@@ -1,7 +1,7 @@
 import React from 'react';
 import personalInfo from './Data'; // Import data from Data.js
 
-const { skills } = personalInfo.skills; // Destructure timeline data
+const { skill } = personalInfo;
 
 
 // Mapping skill names to their respective icons
@@ -22,14 +22,14 @@ const skillIcons = {
   'Critical Thinking': 'fas fa-brain'
 };
 
-function Skills() {
+function Skills(personalInfo) {
   return (
     <div className="bg-white p-4 rounded-md">
       <h2 className="text-xl font-semibold flex items-start">
         <i className="fas fa-tools mr-2"></i> Skills
       </h2>
       <ul>
-        {skills.map((skill, index) => (
+        {personalInfo.map((skill, index) => (
           <li key={index} className="flex items-center">
             <i className={`${skillIcons[skill] || 'fas fa-check-circle'} text-green-500 mr-2`}></i>
             {skill}

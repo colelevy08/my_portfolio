@@ -3,11 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt, faInfoCircle, faBuilding, faStar } from '@fortawesome/free-solid-svg-icons';
 import personalInfo from './Data'; // Import data from Data.js
 
-const { timeline } = personalInfo.timeline; // Destructure timeline data
+const { timeline } = personalInfo.timeline;
 
 
 // Timeline component to display a list of events
-function Timeline() {
+function Timeline(timeline) {
   return (
     <div className="bg-white p-8 rounded-lg shadow-lg">
       <h2 className="text-2xl font-bold mb-6 flex items-start">

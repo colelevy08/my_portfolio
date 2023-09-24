@@ -1,7 +1,7 @@
 import React from 'react';
 import personalInfo from './Data'; // Import data from Data.js
 
-const { spoken_languages } = personalInfo.spoken_languages; // Destructure timeline data
+const { spoken_languages } = personalInfo;
 
 
 // Mapping language names to their respective icons
@@ -12,7 +12,7 @@ const languageIcons = {
   'Mandarin': 'fas fa-comments'
 };
 
-function Languages() {
+function Languages(spoken_languages) {
   return (
     <div className="bg-white p-4 rounded-md">
       <h2 className="text-xl font-semibold flex items-start">

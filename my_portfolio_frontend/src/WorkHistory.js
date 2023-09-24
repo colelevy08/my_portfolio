@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase, faUserTie, faCalendarAlt, faInfoCircle, faBuilding } from '@fortawesome/free-solid-svg-icons';
 import personalInfo from './Data'; // Import data from Data.js
 
-const { work_history } = personalInfo.work_history; // Destructure timeline data
+const { work_history } = personalInfo;
 
 
-function WorkHistory() {
+function WorkHistory(work_history) {
   return (
     <div className="bg-white p-8 rounded-lg shadow-md">
       <h2 className="text-2xl font-bold mb-4 flex items-center">

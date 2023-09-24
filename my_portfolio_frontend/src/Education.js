@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGraduationCap, faUniversity, faChalkboardTeacher, faCalendarAlt, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 import personalInfo from './Data'; // Import data from Data.js
 
-const { education } = personalInfo.education; // Destructure timeline data
+const { education } = personalInfo;
 
 
-function Education() {
+function Education(education) {
   return (
     <div className="bg-white p-8 rounded-lg shadow-md">
       <h2 className="text-2xl font-bold mb-4 flex items-center">

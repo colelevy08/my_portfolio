@@ -1,7 +1,7 @@
 import React from 'react';
 import personalInfo from './Data'; // Import data from Data.js
 
-const { software } = personalInfo.software; // Destructure timeline data
+const { software } = personalInfo;
 
 
 // Mapping software names to their respective icons
@@ -22,7 +22,7 @@ const softwareIcons = {
   'Microsoft Office': 'fab fa-windows'
 };
 
-function Software() {
+function Software(software) {
   return (
     <div className="bg-white p-4 rounded-md">
       <h2 className="text-xl font-semibold flex items-center">
