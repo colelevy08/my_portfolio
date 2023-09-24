@@ -2,9 +2,9 @@
 
 ![Portfolio Banner](https://github.com/colelevy08/my_portfolio/blob/Banner/banner-industry-tech.jpg) 
 
-## Visit The Site
+## Visit The Website
 
-Take a look at a live version of the site here:
+Take a look at a live version of the website here:
 https://colelevy08.github.io/my_portfolio/
 
 ## Table of Contents
