@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGraduationCap, faUniversity, faChalkboardTeacher, faCalendarAlt, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 
+// Education component to display educational background
 function Education({ data }) {
   return (
     <div className="bg-white p-8 rounded-lg shadow-md">
@@ -9,6 +10,7 @@ function Education({ data }) {
         <FontAwesomeIcon icon={faGraduationCap} className="mr-2" />
         Education
       </h2>
+      {/* Mapping through the data array to render each education */}
       <ul className="space-y-4">
         {data.map((education, index) => (
           <li key={index} className="border p-4 rounded-md">

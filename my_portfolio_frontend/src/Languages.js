@@ -1,14 +1,15 @@
 import React from 'react';
 
-// Mapping language names to their respective icons
-const languageIcons = {
-  'English': 'fas fa-comment-alt',
-  'Spanish': 'fas fa-comments',
-  'French': 'fas fa-comments',
-  'Mandarin': 'fas fa-comments'
-};
-
+// Destructure 'data' from props
 function Languages({ data }) {
+  // Mapping language names to their respective icons
+  const languageIcons = {
+    'English': 'fas fa-comment-alt',
+    'Spanish': 'fas fa-comments',
+    'French': 'fas fa-comments',
+    'Mandarin': 'fas fa-comments'
+  };
+
   return (
     <div className="bg-white p-4 rounded-md">
       <h2 className="text-xl font-semibold flex items-start">

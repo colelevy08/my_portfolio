@@ -1,24 +1,25 @@
 import React from 'react';
 
-// Mapping software names to their respective icons
-const softwareIcons = {
-  'Python': 'fab fa-python',
-  'Flask': 'fas fa-flask',
-  'SQL': 'fas fa-database',
-  'JavaScript': 'fab fa-js',
-  'React': 'fab fa-react',
-  'Node.js': 'fab fa-node-js',
-  'HTML': 'fab fa-html5',
-  'CSS': 'fab fa-css3-alt',
-  'Github': 'fab fa-github',
-  'VSCode': 'fas fa-code',
-  'Full Stack Development': 'fas fa-code-branch',
-  'Macintosh Applications, Software, and CLI': 'fab fa-apple',
-  'Google Applications and Software': 'fab fa-google',
-  'Microsoft Office': 'fab fa-windows'
-};
-
+// Destructure 'data' from props
 function Software({ data }) {
+  // Mapping software names to their respective icons
+  const softwareIcons = {
+    'Python': 'fab fa-python',
+    'Flask': 'fas fa-flask',
+    'SQL': 'fas fa-database',
+    'JavaScript': 'fab fa-js',
+    'React': 'fab fa-react',
+    'Node.js': 'fab fa-node-js',
+    'HTML': 'fab fa-html5',
+    'CSS': 'fab fa-css3-alt',
+    'Github': 'fab fa-github',
+    'VSCode': 'fas fa-code',
+    'Full Stack Development': 'fas fa-code-branch',
+    'Macintosh Applications, Software, and CLI': 'fab fa-apple',
+    'Google Applications and Software': 'fab fa-google',
+    'Microsoft Office': 'fab fa-windows'
+  };
+
   return (
     <div className="bg-white p-4 rounded-md">
       <h2 className="text-xl font-semibold flex items-center">

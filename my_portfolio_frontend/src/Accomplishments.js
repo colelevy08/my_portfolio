@@ -1,13 +1,14 @@
 import React from 'react';
 
-// Mapping accomplishment names to their respective icons
-const accomplishmentIcons = {
-  'Rowing National Champion (4x)': 'fas fa-award',
-  '6th place in Head of the Charles (2x)': 'fas fa-trophy',
-  'Adirondack 46er': 'fas fa-mountain'
-};
-
+// Destructure 'data' from props
 function Accomplishments({ data }) {
+  // Mapping accomplishment names to their respective icons
+  const accomplishmentIcons = {
+    'Rowing National Champion (4x)': 'fas fa-award',
+    '6th place in Head of the Charles (2x)': 'fas fa-trophy',
+    'Adirondack 46er': 'fas fa-mountain'
+  };
+
   return (
     <div className="bg-white p-4 rounded-md">
       <h2 className="text-xl font-semibold flex items-start">
