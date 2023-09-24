@@ -16,7 +16,7 @@ function App() {
     <Router>
       <div className="App bg-gray-100">
         <header className="bg-blue-500 text-white p-4">
-        <i className="fas fa-user-circle"></i> Cole Levy's Portfolio
+          <i className="fas fa-user-circle"></i> Cole Levy's Portfolio
           <nav className="space-x-4">
             <Link className="text-white" to="/my_portfolio">Home</Link> |
             <Link className="text-white" to="/education">Education</Link> |

@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt, faInfoCircle, faBuilding, faStar } from '@fortawesome/free-solid-svg-icons';
 
-// Destructure 'data' from props
+// Timeline component to display a list of events
 function Timeline({ data }) {
   return (
     <div className="bg-white p-8 rounded-lg shadow-lg">
@@ -12,6 +12,7 @@ function Timeline({ data }) {
       <div className="relative">
         {/* Vertical line connecting the boxes */}
         <div className="absolute left-1/2 h-full w-0.5 bg-blue-600"></div>
+        {/* Mapping through the data array to render each event */}
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {data.map((event, index) => (
             <li key={index} className="relative mb-8">

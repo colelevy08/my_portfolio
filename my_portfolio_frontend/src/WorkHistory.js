@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase, faUserTie, faCalendarAlt, faInfoCircle, faBuilding } from '@fortawesome/free-solid-svg-icons';
 
-// Destructure 'data' from props
+// WorkHistory component to display work history
 function WorkHistory({ data }) {
   return (
     <div className="bg-white p-8 rounded-lg shadow-md">
@@ -10,6 +10,7 @@ function WorkHistory({ data }) {
         <FontAwesomeIcon icon={faBriefcase} className="mr-2" />
         Work History
       </h2>
+      {/* Mapping through the data array to render each work history */}
       <ul className="space-y-4">
         {data.map((work, index) => (
           <li key={index} className="border p-4 rounded-md">
