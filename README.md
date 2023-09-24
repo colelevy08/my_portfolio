@@ -2,6 +2,10 @@
 
 ![Portfolio Banner](https://github.com/colelevy08/my_portfolio/blob/Banner/banner-industry-tech.jpg) 
 
+## Visit The Site
+
+!(https://colelevy08.github.io/my_portfolio/)
+
 ## Table of Contents
 - [Overview](#overview)
 - [Technologies Used](#technologies-used)
