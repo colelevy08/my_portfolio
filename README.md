@@ -4,7 +4,8 @@
 
 ## Visit The Site
 
-!(https://colelevy08.github.io/my_portfolio/)
+Take a look at a live version of the site here:
+https://colelevy08.github.io/my_portfolio/
 
 ## Table of Contents
 - [Overview](#overview)
