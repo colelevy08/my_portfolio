@@ -17,7 +17,7 @@ const my_portfolio = () => {
           About Me
         </h2>
         <p className="text-base mt-2">
-          Communication professional with a Bachelor’s Degree in Communication from SUNY Geneseo, combining strong media literacy, interpersonal skills, and business communication with technical expertise. Experienced in customer support, technical troubleshooting, and organizational management. Skilled Software Developer with a background in designing and developing web applications using HTML, CSS, JavaScript, React, Node.js, Python, Flask, SQL, and more. Adept at full-stack development, web services, and database management, with a proven ability to bridge the gap between technology and effective communication to drive successful project outcomes.
+          Communication professional with a Bachelor Degree in Communication from SUNY Geneseo, combining strong media literacy, interpersonal skills, and business communication with technical expertise. Experienced in customer support, technical troubleshooting, and organizational management. Skilled Software Developer with a background in designing and developing web applications using HTML, CSS, JavaScript, React, Node.js, Python, Flask, SQL, and more. Adept at full-stack development, web services, and database management, with a proven ability to bridge the gap between technology and effective communication to drive successful project outcomes.
         </p>
       </div>
 
